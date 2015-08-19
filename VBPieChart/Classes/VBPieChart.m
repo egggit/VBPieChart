@@ -312,6 +312,11 @@ static __inline__ CGFloat CGPointDistanceBetweenTwoPoints(CGPoint point1, CGPoin
     _animationOptions = options;
     _animationDuration = duration;
     self.chartValues = chartValues;
+    
+    //////////////////////////////////////////////////
+    // egg modified
+    // remove chartData to avoid caching.
+    [self.chartsData removeAllObjects];
 }
 
 
